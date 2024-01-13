@@ -16,7 +16,7 @@ extension View {
         overlay(RoundedRectangle(cornerRadius: cornerRadius).stroke(color, lineWidth: width))
     }
     
-    func navSets(navTitle: String) -> some View {
-        ModifiedContent(content: self, modifier: NavModifier(navTitle: navTitle))
+    func navSets(navTitle: String,_ isTitleHidden: Bool = false) -> some View {
+        ModifiedContent(content: self, modifier: NavModifier(navTitle: navTitle, isTitleHidden: isTitleHidden))
     }
 }

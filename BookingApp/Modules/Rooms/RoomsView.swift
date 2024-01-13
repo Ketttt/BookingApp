@@ -10,16 +10,11 @@ import SwiftUI
 struct RoomsView: View, Chips {
     
     @StateObject var model: RoomsViewModel = RoomsViewModel()
-    @Environment(\.presentationMode) var presentation
-    @Binding var activateRootLink: Bool
     let hotelData: HotelResult?
     
-    
-    init(hotelData: HotelResult?, activateRootLink: Binding<Bool>) {
+    init(hotelData: HotelResult?) {
         self.hotelData = hotelData
-        self._activateRootLink = activateRootLink
     }
-    
     
     var body: some View {
         ScrollView {
@@ -43,8 +38,8 @@ struct RoomsView: View, Chips {
                                 }
                             }
                         } //if
-                       
-                        RoomDetailsView()
+
+                        roomDetails()
                             .padding(.bottom, 8)
 
                         HStack(alignment: .bottom, spacing: 8) {
@@ -56,7 +51,7 @@ struct RoomsView: View, Chips {
                         }
                         .padding(.bottom, 8)
                         
-                        NavigationLink(destination: BookingView(activateRootLink: $activateRootLink)) {
+                        NavigationLink(destination: BookingView()) {
                             ButtonView(title: Constants.Rooms.selectNumber)
                             
                         }
@@ -80,3 +75,24 @@ struct RoomsView: View, Chips {
     }//body
 }
 
+extension RoomsView {
+    @ViewBuilder
+    func roomDetails() -> some View {
+        HStack(spacing: 2) {
+            Text(Constants.Rooms.moreAboutRoom)
+                .foregroundColor(CustomColor.activeButton)
+                .font(.system(size: 16))
+            Image(.arrowTr)
+                .renderingMode(.template)
+                .frame(width: 24, height: 24)
+                .foregroundColor(CustomColor.activeButton)
+        }//HStack
+        .padding(.horizontal, 10)
+        .padding(.vertical, 5)
+        .background{
+            CustomColor.activeButton
+                .opacity(0.1)
+        }//background
+        .cornerRadius(5)
+    }
+}

@@ -10,10 +10,9 @@ import SwiftUI
 struct HotelView: View {
     
     @StateObject var model: HotelViewModel = HotelViewModel()
-    @State var activateRootLink: Bool = false
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack(alignment: .bottom) {
                 if !model.loading {
                     ScrollView {
@@ -27,18 +26,14 @@ struct HotelView: View {
                     }//ScrollView
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
                     .background(CustomColor.bg)
-                    .navSets(navTitle: Constants.Hotel.navTitle)
+                    .navSets(navTitle: Constants.Hotel.navTitle, true)
                     
-                    VStack {
-                       
-                        NavigationLink(isActive: $activateRootLink, destination: {
-                            RoomsView(hotelData: model.hotelData, activateRootLink: $activateRootLink)
-                        }, label: {
-                            
-                            ButtonView(title: Constants.Hotel.selectRoom)
-                                .padding(.horizontal, 16)
-                        })
-                    }//VStack
+                    NavigationLink {
+                        RoomsView(hotelData: model.hotelData)
+                    } label: {
+                        ButtonView(title: Constants.Hotel.selectRoom)
+                            .padding(.horizontal, 16)
+                    }
                     .padding(.vertical, 12)
                     .background(Color.white)
                 }//loading
@@ -47,7 +42,7 @@ struct HotelView: View {
                     LoaderView()
                 }
             }//ZStack
-        }//NavigationView
+        }//NavigationStack
         .accentColor(.black)
     }//body
 }

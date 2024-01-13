@@ -10,8 +10,6 @@ import SwiftUI
 struct BookingView: View {
     
     @StateObject var model: BookingViewModel = BookingViewModel()
-    @Environment(\.presentationMode) var presentation
-    @Binding var activateRootLink: Bool
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -49,7 +47,7 @@ struct BookingView: View {
                         .cornerRadius(12)
                         
                         VStack {
-                            NavigationLink(destination: FihishView(activateRootLink: $activateRootLink)) {
+                            NavigationLink(destination: FihishView()) {
                                 ButtonView(title: "Оплатить \(model.bookingData?.finalСost ?? "") ₽")
                                 
                             }
@@ -77,4 +75,23 @@ struct BookingView: View {
     }
 }
 
-
+extension BookingView {
+    @ViewBuilder
+    func reservDetails(model: BookingViewModel) -> some View {
+        VStack(alignment: .leading, spacing: 16) {
+            BookingInfoStackView(title: Constants.BuyerInformation.departure, subtitle: model.bookingData?.departure ?? "")
+                .padding(.top, 16)
+            BookingInfoStackView(title: Constants.BuyerInformation.country, subtitle: model.bookingData?.arrivalCountry ?? "")
+            let date = "\(model.bookingData?.tourDateStart ?? "") - \(model.bookingData?.tourDateStop ?? "")"
+            BookingInfoStackView(title: Constants.BuyerInformation.dates, subtitle: date)
+            BookingInfoStackView(title: Constants.BuyerInformation.numOfNight, subtitle: "\(model.bookingData?.numberOfNights ?? 0) ночь")
+            BookingInfoStackView(title: Constants.BuyerInformation.numOfNight, subtitle: "\(model.bookingData?.numberOfNights ?? 0) ночь")
+            BookingInfoStackView(title: Constants.BuyerInformation.room, subtitle: model.bookingData?.room ?? "")
+            BookingInfoStackView(title: Constants.BuyerInformation.nutrition, subtitle: model.bookingData?.nutrition ?? "")
+                .padding(.bottom, 16)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color.white)
+        .cornerRadius(12)
+    }
+}

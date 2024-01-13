@@ -11,6 +11,12 @@ struct NavModifier: ViewModifier {
     
     @Environment(\.presentationMode) var presentation
     let navTitle: String
+    var isTitleHidden: Bool
+    
+    init(navTitle: String, isTitleHidden: Bool) {
+        self.navTitle = navTitle
+        self.isTitleHidden = isTitleHidden
+    }
     
     func body(content: Content) -> some View {
         content
@@ -20,11 +26,13 @@ struct NavModifier: ViewModifier {
             .navigationBarBackButtonHidden(true)
             .toolbar(content: {
                 ToolbarItem (placement: .navigation)  {
-                    Image(systemName: "arrow.left")
-                        .foregroundColor(.black)
-                        .onTapGesture {
-                            self.presentation.wrappedValue.dismiss()
-                        }
+                    if !isTitleHidden {
+                        Image(systemName: "arrow.left")
+                            .foregroundColor(.black)
+                            .onTapGesture {
+                                self.presentation.wrappedValue.dismiss()
+                            }
+                    }
                 }
             })
     }

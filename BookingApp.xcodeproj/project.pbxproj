@@ -45,14 +45,11 @@
 		E02F37762B4EEAD000E269F5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F37752B4EEAD000E269F5 /* StringExtension.swift */; };
 		E02F37792B4EEB0100E269F5 /* ChipsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F37782B4EEB0100E269F5 /* ChipsProtocol.swift */; };
 		E02F377D2B4EEB6E00E269F5 /* RoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F377C2B4EEB6E00E269F5 /* RoomsViewModel.swift */; };
-		E02F37802B4EEB9700E269F5 /* RoomDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F377F2B4EEB9700E269F5 /* RoomDetailsView.swift */; };
 		E02F37822B4EEBC100E269F5 /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F37812B4EEBC100E269F5 /* RoomsView.swift */; };
-		E02F37872B4EEC0500E269F5 /* TouristTextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F37862B4EEC0500E269F5 /* TouristTextfieldView.swift */; };
 		E02F37892B4EEC1900E269F5 /* TouristFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F37882B4EEC1900E269F5 /* TouristFormView.swift */; };
 		E02F378B2B4EEC3100E269F5 /* AddTouristView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F378A2B4EEC3100E269F5 /* AddTouristView.swift */; };
 		E02F378D2B4EEC5C00E269F5 /* BookingInfoStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F378C2B4EEC5C00E269F5 /* BookingInfoStackView.swift */; };
 		E02F378F2B4EEC6F00E269F5 /* BuyerInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F378E2B4EEC6F00E269F5 /* BuyerInformationView.swift */; };
-		E02F37912B4EEC9100E269F5 /* ReservDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F37902B4EEC9100E269F5 /* ReservDetails.swift */; };
 		E02F37942B4EECB100E269F5 /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F37932B4EECB100E269F5 /* BookingViewModel.swift */; };
 		E02F37962B4EECC800E269F5 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F37952B4EECC800E269F5 /* BookingView.swift */; };
 		E02F37992B4EECE500E269F5 /* FihishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02F37982B4EECE500E269F5 /* FihishView.swift */; };
@@ -102,14 +99,11 @@
 		E02F37752B4EEAD000E269F5 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E02F37782B4EEB0100E269F5 /* ChipsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsProtocol.swift; sourceTree = "<group>"; };
 		E02F377C2B4EEB6E00E269F5 /* RoomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewModel.swift; sourceTree = "<group>"; };
-		E02F377F2B4EEB9700E269F5 /* RoomDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsView.swift; sourceTree = "<group>"; };
 		E02F37812B4EEBC100E269F5 /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
-		E02F37862B4EEC0500E269F5 /* TouristTextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristTextfieldView.swift; sourceTree = "<group>"; };
 		E02F37882B4EEC1900E269F5 /* TouristFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristFormView.swift; sourceTree = "<group>"; };
 		E02F378A2B4EEC3100E269F5 /* AddTouristView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTouristView.swift; sourceTree = "<group>"; };
 		E02F378C2B4EEC5C00E269F5 /* BookingInfoStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingInfoStackView.swift; sourceTree = "<group>"; };
 		E02F378E2B4EEC6F00E269F5 /* BuyerInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerInformationView.swift; sourceTree = "<group>"; };
-		E02F37902B4EEC9100E269F5 /* ReservDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservDetails.swift; sourceTree = "<group>"; };
 		E02F37932B4EECB100E269F5 /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModel.swift; sourceTree = "<group>"; };
 		E02F37952B4EECC800E269F5 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
 		E02F37982B4EECE500E269F5 /* FihishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FihishView.swift; sourceTree = "<group>"; };
@@ -295,7 +289,6 @@
 		E02F377A2B4EEB4500E269F5 /* Rooms */ = {
 			isa = PBXGroup;
 			children = (
-				E02F377E2B4EEB8400E269F5 /* Subviews */,
 				E02F377B2B4EEB5F00E269F5 /* RoomsViewModel */,
 				E02F37812B4EEBC100E269F5 /* RoomsView.swift */,
 			);
@@ -308,14 +301,6 @@
 				E02F377C2B4EEB6E00E269F5 /* RoomsViewModel.swift */,
 			);
 			path = RoomsViewModel;
-			sourceTree = "<group>";
-		};
-		E02F377E2B4EEB8400E269F5 /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-				E02F377F2B4EEB9700E269F5 /* RoomDetailsView.swift */,
-			);
-			path = Subviews;
 			sourceTree = "<group>";
 		};
 		E02F37832B4EEBD700E269F5 /* Booking */ = {
@@ -334,7 +319,6 @@
 				E02F37852B4EEBF100E269F5 /* TouristRegistration */,
 				E02F378C2B4EEC5C00E269F5 /* BookingInfoStackView.swift */,
 				E02F378E2B4EEC6F00E269F5 /* BuyerInformationView.swift */,
-				E02F37902B4EEC9100E269F5 /* ReservDetails.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -342,7 +326,6 @@
 		E02F37852B4EEBF100E269F5 /* TouristRegistration */ = {
 			isa = PBXGroup;
 			children = (
-				E02F37862B4EEC0500E269F5 /* TouristTextfieldView.swift */,
 				E02F37882B4EEC1900E269F5 /* TouristFormView.swift */,
 				E02F378A2B4EEC3100E269F5 /* AddTouristView.swift */,
 			);
@@ -457,7 +440,6 @@
 				E02F371E2B4EE14000E269F5 /* BookingAppApp.swift in Sources */,
 				E02F376D2B4EEA2800E269F5 /* BuyerContactsTextField.swift in Sources */,
 				E02F37622B4EE9BF00E269F5 /* RatingView.swift in Sources */,
-				E02F37872B4EEC0500E269F5 /* TouristTextfieldView.swift in Sources */,
 				E02F374B2B4EE5A800E269F5 /* ErrorResult.swift in Sources */,
 				E02F37A02B4EF31100E269F5 /* Endpoint.swift in Sources */,
 				E02F375D2B4EE94000E269F5 /* TitleButton.swift in Sources */,
@@ -469,7 +451,6 @@
 				E02F373B2B4EE4D700E269F5 /* HotelListView.swift in Sources */,
 				E02F37602B4EE96C00E269F5 /* ImageTabView.swift in Sources */,
 				E02F37592B4EE91A00E269F5 /* HTTPMethod.swift in Sources */,
-				E02F37802B4EEB9700E269F5 /* RoomDetailsView.swift in Sources */,
 				E02F37A22B4F55D300E269F5 /* ApiRequest.swift in Sources */,
 				E02F37342B4EE47D00E269F5 /* HotelViewModel.swift in Sources */,
 				E02F37542B4EE78E00E269F5 /* CornerRadiusStyle.swift in Sources */,
@@ -499,7 +480,6 @@
 				E02F37642B4EE9CF00E269F5 /* LoaderView.swift in Sources */,
 				E02F37962B4EECC800E269F5 /* BookingView.swift in Sources */,
 				E02F37792B4EEB0100E269F5 /* ChipsProtocol.swift in Sources */,
-				E02F37912B4EEC9100E269F5 /* ReservDetails.swift in Sources */,
 				E02F37432B4EE55D00E269F5 /* TouristData.swift in Sources */,
 				E02F37822B4EEBC100E269F5 /* RoomsView.swift in Sources */,
 				E02F37402B4EE52D00E269F5 /* Constants.swift in Sources */,
@@ -644,7 +624,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -678,7 +658,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

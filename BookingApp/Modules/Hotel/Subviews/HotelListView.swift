@@ -33,7 +33,7 @@ struct HotelListView: View {
             }//ForEach
         }
         .padding(.all, 15)
-        .background(CustomColor.bgView)
+        .background(CustomColor.bgView.opacity(0.4))
         .cornerRadius(15)
     }
 }

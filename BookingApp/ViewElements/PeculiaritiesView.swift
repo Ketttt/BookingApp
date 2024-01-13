@@ -15,6 +15,6 @@ func ChipsView(peculiarities: String) -> some View {
         .foregroundColor(CustomColor.grayText)
         .padding(5)
         .frame(height: 29)
-        .background(CustomColor.bgView)
+        .background(CustomColor.bgView.opacity(0.4))
         .cornerRadius(6)
 }
